@@ -62,19 +62,15 @@ void prepare_board() {
 
     for(int x = 0; x < board_x; x++) {
         for(int y = 0; y < board_y; y++) {
-
             for(int nx = -1; nx <= 1; nx++) {
                 for(int ny = -1; ny <=1; ny++) {
-                    
                     if(x + nx >= 0 && x + nx <= 7 && y + ny >= 0 && y + ny <= 7) {  // Skip incorrect values
                         if(board[y + ny][x + nx].has_bomb) {
                             board[y][x].bombs_near++;
                         }
                     }
-
                 }
             }
-
         }
     }
 
@@ -124,6 +120,17 @@ void uncover_field(int x, int y) {
         if(!board[y][x].is_uncovered) {
             board[y][x].is_uncovered = true;
             uncovered_fields++;
+
+            if(board[y][x].bombs_near == 0) {
+                for(int nx = -1; nx <= 1; nx++) {
+                    for(int ny = -1; ny <=1; ny++) {
+                        if(x + nx >= 0 && x + nx <= 7 && y + ny >= 0 && y + ny <= 7) {  // Skip incorrect values
+                            uncover_field(x + nx, y + ny);
+                        }
+                    }
+                }
+
+            }
         }
     }
 }
