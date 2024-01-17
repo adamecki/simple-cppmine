@@ -1,10 +1,9 @@
 Compiled for these platforms so far:
 
 MS Windows x64
+DOS
 
 Will be compiled for these platforms soon:
 
 Linux x64
 Linux amd64
-
-DOS
