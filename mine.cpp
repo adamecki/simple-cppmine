@@ -1,8 +1,6 @@
 // Simple console Minesweeper game
 
-// I am thinking about porting it to (Free)DOS but
-// I'm not very confident so far with old C++ which
-// (Free)DOS is compatible with (Watcom C++ 11.0 etc.)
+// It is also working with (Free)DOS now! Check out CM_DOS.CPP and CM_DOS.EXE
 
 #include <iostream>
 #include <string>
