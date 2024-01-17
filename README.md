@@ -2,4 +2,4 @@
 
 It works just like every single Minesweeper game, except its gameplay is text-mode.
 
-I will also be porting it to (Free)DOS soon
+It is also ported to (Free)DOS
