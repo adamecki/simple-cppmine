@@ -1,9 +1,5 @@
 // Simple console Minesweeper game
 
-// So far I didn't implement a functionality which
-// automatically uncovers nearly fields if they
-// are empty, but I'll try to implement it later
-
 // I am thinking about porting it to (Free)DOS but
 // I'm not very confident so far with old C++ which
 // (Free)DOS is compatible with (Watcom C++ 11.0 etc.)
