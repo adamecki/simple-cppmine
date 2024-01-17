@@ -129,7 +129,6 @@ void uncover_field(int x, int y) {
                         }
                     }
                 }
-
             }
         }
     }
